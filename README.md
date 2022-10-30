@@ -6,12 +6,12 @@ MMECG is an open-source dataset of 10 hours of processed mmWave radar data and s
 ## Experimental Setup
 During data acquisition, the participants are asked to lie in the supine position and remain in quasi-static status. The radar sensor is placed above the torso chest within 0.4-0.5m, and the main lobe of the antennas is directed to the sternum approximately. We conducted 200 experimental trials over 35 participants (22males and 14 females) between the ages of 18 and 65. The trials are designed consisting of 4 different physiological statuses:  normal-breath, irregular-breath, post-exercise (for instance, jumping jacks), and sleep to expand the diversity of cardiac rhythms (including arrhythmia, bradycardia, tachycardia, normal rhythm) in the datasets. Each trial lasts for 3 minutes.
 Experimental settings are shown as follows:
-![dca](https://github.com/jinbochen0823/RCG2ECG/blob/expsettings.png.png)
+![dca](https://github.com/jinbochen0823/RCG2ECG/blob/af7a37891caa07e4640241334d77a2c2aedc7a57/expsettings.png)
 
 ## Hardware Configuration
 This dataset is collected by TI AWR1843 mmWave radar (left) and DCA1000 real-time data acquisition board (right). Specifically, we activate 3 transmitters (Tx) and 4 receivers (Rx) to achieve a virtual 2D antenna array with 12 channels. Time division multiplexing strategy is exploited to achieve signal orthogonal in time among multiple Tx antennas. During one frame of radar sensing, all the 3 Tx transmit chirps of RF signal successively with $45\mu s$ interval to acquire the baseband signal from one channel to the entire 4 Rxs. 
 
-![dca](https://github.com/jinbochen0823/RCG2ECG/blob/awr1843dca1000.png)
+![dca](https://github.com/jinbochen0823/RCG2ECG/blob/af7a37891caa07e4640241334d77a2c2aedc7a57/awr1843dca1000.png)
 
 The parameters of the radar are set as follows:
 
@@ -28,7 +28,7 @@ Under these settings, the radar achieves a frame rate of **200Hz**, total **3.32
 The radar raw signals are processed to 4D cardiac motion measurements by sequence of signal processing algorithms introduced in **Cardiac Motion Measurements in Radar Section** of the paper, which can be expressed in the representation as $C_{S} = \{\mu_{n},l_{\mu_{n}}\}, \forall n \in 1,2,...,N$, where $\mu_{n}$ is a cardiac motion measurement sequence with k frames respect to the 3D location $l_{\mu_{n}}$. In this dataset N is set to 50. The x, y, z axis of 3D coordination system are parallel to the direction of body height, body width, and vertical to chest approximately.
 
 
-![push](https://github.com/jinbochen0823/RCG2ECG/blob/sigprocess.png)
+![sp](https://github.com/jinbochen0823/RCG2ECG/blob/6fac444dc0af4307f1b05089e6ba14faa2740623/sigprocess.png)
 ## Dataset Structure
 - Each 3 minutes trial data are saved in a Matlab mat file which named with trails index.
 - Each mat file is a structure array consisting of 6 fields of data (RCG, ECG, id, age, gender, physiological status).  RCG is the 4D cardiac motion measurement. The first dimension is sample points, and the second dimension is N mentioned in the last section. ECG is the synchronized ECG measurements. ID, age, and gender represent the participant’s index, age, and gender respectively. The physiological status of normal-breath, irregular-breath, post-exercise and sleep are denoted as 'NB', 'IB', 'PE','SP', respectively.
