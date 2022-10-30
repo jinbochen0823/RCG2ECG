@@ -32,7 +32,7 @@ The radar raw signals are processed to 4D cardiac motion measurements by sequenc
 
 ![sp](https://github.com/jinbochen0823/RCG2ECG/blob/6fac444dc0af4307f1b05089e6ba14faa2740623/sigprocess.png)
 ## Dataset Structure
-- Each 3 minutes trial data are saved in a Matlab mat file which named with trails index.
+- Each 3 minutes trial data are saved in a Matlab mat file which named with trial index.
 - Each mat file is a structure array consisting of 6 fields of data (RCG, ECG, id, age, gender, physiological status).  RCG is the 4D cardiac motion measurement. The first dimension is sample points, and the second dimension is N mentioned in the last section. ECG is the synchronized ECG measurements. ID, age, and gender represent the participant’s index, age, and gender respectively. The physiological status of normal-breath, irregular-breath, post-exercise and sleep are denoted as 'NB', 'IB', 'PE','SP', respectively.
 
 
