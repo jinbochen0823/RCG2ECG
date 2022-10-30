@@ -6,7 +6,9 @@ MMECG is an open-source dataset of 10 hours of processed mmWave radar data and s
 ## Experimental Setup
 During data acquisition, the participants are asked to lie in the supine position and remain in quasi-static status. The radar sensor is placed above the torso chest within 0.4-0.5m, and the main lobe of the antennas is directed to the sternum approximately. We conducted 200 experimental trials over 35 participants (22males and 14 females) between the ages of 18 and 65. The trials are designed consisting of 4 different physiological statuses:  normal-breath, irregular-breath, post-exercise (for instance, jumping jacks), and sleep to expand the diversity of cardiac rhythms (including arrhythmia, bradycardia, tachycardia, normal rhythm) in the datasets. Each trial lasts for 3 minutes.
 Experimental settings are shown as follows:
-<img src="[./xxx.png](https://github.com/jinbochen0823/RCG2ECG/blob/b19b60dd143561164e8f6842410ae137f8f6fca7/expsettings.png)" width = "300" height = "200" alt="图片名称" align=center />
+<div align=center>
+    <img src='./expsettings.jpg', width = "40%">
+</div>
 ![ep](https://github.com/jinbochen0823/RCG2ECG/blob/b19b60dd143561164e8f6842410ae137f8f6fca7/expsettings.png =300)
 
 
