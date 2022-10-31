@@ -37,7 +37,7 @@ The radar raw signals are processed to 4D cardiac motion measurements by sequenc
 
 
 # How to access the dataset
-To obtain the dataset, please sign the [agreement](datasetAgreement.pdf), scan and send it to jinbochen@mail.ustc.edu.cn. You will receive a notification email which includes the download links of the dataset in three days.
+To obtain the dataset, please sign the [agreement](datasetAgreement.pdf) which should be stamped with the official seal of your institution, scan and send it to jinbochen@mail.ustc.edu.cn. You will receive a notification email which includes the download links of the dataset in three days.
 
 ## Citation
 -If you use this dataset, please cite the following paper :
